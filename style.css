@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(6, 0, 43);
+}
+
+#title {
+    text-align: center;
+    color: white;
+}
+
+.main-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.row-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#intro {
+    background-color: green;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms;
+}
+
+#intro:hover {
+
+}
+
+.row-section {
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.col-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#name-career {
+    margin-left: 1rem;
+    padding: 0;
+}
+
+.section-titles {
+    text-align: center;
+    margin: -.5rem 0 0 0;
+    font-size: 18px;
+}
+
+#profile-picture {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+#name {
+    margin: 1.5rem 0 0 0;
+}
+
+section {
+    border-radius: 20px;
+    padding: 1rem;
+    margin: .3rem .3rem;
+    overflow: hidden;
+}
+
+p {
+    margin-top: 1.5rem;
+}
+
+#info {
+    background-color: yellow;
+    width: 47%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#languages {
+    background-color: lightskyblue;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms;
+}
+
+.p-languages {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 .35rem;
+}
+
+#lang-images {
+    margin-top: -.1rem;
+}
+
+#lang-p {
+    margin-top: 1rem;
+}
+
+#projects {
+    background-color: orange;
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms;
+}
