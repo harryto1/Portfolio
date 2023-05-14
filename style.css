@@ -9,6 +9,7 @@ body {
 #title {
     text-align: center;
     color: white;
+    font-family: 'Montserrat', serif;
 }
 
 .main-container {
@@ -19,32 +20,44 @@ body {
     flex-wrap: wrap;
 }
 
+.col-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .row-container {
     width: 100%;
     display: flex;
+    height: 25rem;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-top: -0.65rem;
 }
+
 
 #intro {
     background-color: green;
-    width: 47%;
-    height: 100%;
+    width: 50%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     transition: all 200ms;
 }
 
-#intro:hover {
-
-}
-
 .row-section {
     width: 100%;
     display: flex;
-    margin-top: 1rem;
 
+}
+
+#profile {
+    margin-top: 1rem;
 }
 
 .col-section {
@@ -61,6 +74,7 @@ body {
     text-align: center;
     margin: -.5rem 0 0 0;
     font-size: 18px;
+    font-family: 'Montserrat';
 }
 
 #profile-picture {
@@ -71,6 +85,12 @@ body {
 
 #name {
     margin: 1.5rem 0 0 0;
+    font-family: 'Raleway';
+}
+
+#career {
+    font-family: 'Raleway';
+    font-style: italic;
 }
 
 section {
@@ -82,20 +102,21 @@ section {
 
 p {
     margin-top: 1.5rem;
+    font-family: 'Raleway';
 }
 
 #info {
     background-color: yellow;
     width: 47%;
-    height: 50%;
+    height: 35%;
     display: flex;
     flex-direction: column;
 }
 
 #languages {
     background-color: lightskyblue;
-    width: 47%;
-    height: 100%;
+    width: 50%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     transition: all 200ms;
@@ -108,7 +129,7 @@ p {
 }
 
 #lang-images {
-    margin-top: -.1rem;
+    margin-top: .1rem;
 }
 
 #lang-p {
@@ -118,8 +139,47 @@ p {
 #projects {
     background-color: orange;
     width: 47%;
-    height: 100%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     transition: all 200ms;
+}
+
+.proj-images{
+    width: auto;
+    height: 3rem;
+}
+
+.proj-a{
+    height: 3rem;
+    margin: 0 .35rem;
+    margin-top: .35rem;
+}
+
+#twitter {
+    background-color: rgb(29, 161, 242);
+    width: 15%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms;
+    align-items: center;
+}
+
+#twitter-logo {
+    width: 7rem;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .row-container {
+        height: 50rem;
+        flex-wrap: nowrap;
+    }
+
+    #intro, #info, #languages, #projects {
+        width: 100%;
+    }
+
 }
