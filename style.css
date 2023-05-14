@@ -28,6 +28,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .row-container {
@@ -98,6 +99,7 @@ section {
     padding: 1rem;
     margin: .3rem .3rem;
     overflow: hidden;
+    transition: all 200ms;
 }
 
 p {
@@ -108,7 +110,7 @@ p {
 #info {
     background-color: yellow;
     width: 47%;
-    height: 35%;
+    height: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -139,7 +141,7 @@ p {
 #projects {
     background-color: orange;
     width: 47%;
-    height: 55%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     transition: all 200ms;
@@ -152,7 +154,7 @@ p {
 
 .proj-a{
     height: 3rem;
-    margin: 0 .35rem;
+    margin: .5rem;
     margin-top: .35rem;
 }
 
@@ -171,6 +173,18 @@ p {
     height: auto;
 }
 
+.proj-images:hover {
+    filter: blur(3px);
+}
+
+#more-info {
+    text-align: center;
+}
+
+#more-p {
+    display: none;
+    margin-top: 0;
+}
 
 @media only screen and (max-width: 720px) {
     .row-container {
