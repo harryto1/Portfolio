@@ -125,6 +125,7 @@ p {
     transition: all 200ms;
 }
 
+
 .p-languages {
     width: 2.5rem;
     height: 2.5rem;
@@ -223,6 +224,31 @@ p {
     display: flex;
     pointer-events: none;
     transition: all 200ms;
+}
+
+#github {
+    background-color: #343a40;
+    width: 15%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms;
+    align-items: center;
+}
+
+#github-logo {
+    width: 6rem;
+    height: auto;
+}
+
+#github:hover {
+    width: 20%;
+    height: 40%;
+}
+
+#twitter:hover {
+    width: 20%;
+    height: 40%;
 }
 
 @media only screen and (max-width: 720px) {
