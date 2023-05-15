@@ -23,3 +23,4 @@ moreInfo.onclick = function() {
 
 }
 
+let notesProjA = document.getElementById("proj-a-notes");

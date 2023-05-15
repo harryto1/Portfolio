@@ -157,6 +157,10 @@ p {
     height: 3rem;
     margin: .5rem;
     margin-top: .35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms;
 }
 
 #twitter {
@@ -176,6 +180,7 @@ p {
 
 .proj-images:hover {
     filter: blur(3px);
+    transition: all 200ms;
 }
 
 #more-info {
@@ -186,6 +191,38 @@ p {
 #more-p {
     display: none;
     margin-top: 0;
+}
+
+#proj-a-notes::before {
+    content: "Notes";
+}
+
+#proj-a-ccv::before {
+    content: "CCValidator";
+}
+
+#proj-a-cc::before {
+    content: "ClickCounter";
+}
+
+#proj-a-lodash::before {
+    content:"Lodash";
+}
+
+.proj-a::before {
+    position: fixed;
+    z-index: 1;
+    display: none;
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    transition: all 200ms;
+}
+
+.proj-a:hover::before {
+    display: flex;
+    pointer-events: none;
+    transition: all 200ms;
 }
 
 @media only screen and (max-width: 720px) {
