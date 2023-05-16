@@ -283,6 +283,7 @@ p {
     transform: translate(-50%, -50%);
     border: 3px goldenrod outset;
     z-index: 2;
+    border-radius: 20px;
 }
 
 #close-button-notes {
