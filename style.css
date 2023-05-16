@@ -211,18 +211,19 @@ p {
 }
 
 .proj-a::before {
-    position: fixed;
+    position: absolute;
     z-index: 1;
     display: none;
     font-weight: bold;
     color: black;
     font-size: 12px;
     transition: all 200ms;
+    pointer-events: none;
 }
 
-.proj-a:hover::before {
+
+.proj-a:hover::before{
     display: flex;
-    pointer-events: none;
     transition: all 200ms;
 }
 
