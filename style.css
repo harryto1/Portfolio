@@ -430,3 +430,26 @@ p {
         display: flex;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    main {
+        width: 90%;
+    }
+    
+    p {
+        font-size: 10px;
+    }
+
+    #profile-picture {
+        width: 4rem;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    #career {
+        font-size: 10px;
+    }
+}
