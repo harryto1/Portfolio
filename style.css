@@ -189,7 +189,20 @@ p {
 
 #more-info {
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    width: 1rem;
+    height: 1rem;
+    font-size: 23px;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+#more-info:hover {
+    opacity: 1;
+    transition: all 200ms;
 }
 
 #more-p {
@@ -267,7 +280,7 @@ p {
 
 #notes-app-img {
     width: 6rem;
-    height: auto;
+    height: 6rem;
 }
 
 #notes-app-container:hover {
@@ -332,10 +345,15 @@ p {
 
 #notes-section-container {
     justify-content: center;
+    align-items: center;
 }
 
 #notes-p, #Notes, #notes-col-container  {
     display: none;
+}
+
+#notes-p {
+    margin-left: .5rem;
 }
 
 #notes-logos-container {
@@ -356,16 +374,58 @@ p {
         flex-wrap: nowrap;
     }
 
-    #intro, #info, #languages, #projects {
+    #intro, #info, #languages, #projects, #twitter, #github, #notes-app-container {
         width: 100%;
     }
 
-@media only screen and (max-width: 900px) {
-    .col-container {
-        height: 50rem;
+    #second-main-container {
+        flex-direction: column;
+        height: 30rem;
+        flex-wrap: nowrap;
+        margin-top: .15rem;
     }
 
+    #twitter:hover, #github:hover, #notes-app-container:hover {
+        width: 100%;
+    }
+
+    #notes-p, #Notes  {
+        display: block;
+    }
     
+    #notes-col-container {
+        display: flex;
+    }
+
 }
 
+
+@media only screen and (max-width: 1200px) {
+    .col-container {
+        height: 50rem;
+        flex-wrap: nowrap;
+    }
+
+    #intro, #info, #languages, #projects, #twitter, #github, #notes-app-container {
+        width: 100%;
+    }
+
+    #second-main-container {
+        flex-direction: column;
+        height: 30rem;
+        flex-wrap: nowrap;
+        margin-top: .15rem;
+    }
+
+    #twitter:hover, #github:hover, #notes-app-container:hover {
+        width: 100%;
+    }
+
+    #notes-p, #Notes  {
+        display: block;
+    }
+    
+    #notes-col-container {
+        display: flex;
+    }
 }
