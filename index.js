@@ -23,4 +23,19 @@ moreInfo.onclick = function() {
 
 }
 
+let notesCloseButton = document.getElementById("close-button-notes");
+let notesApp = document.getElementById("notes-app");
+let notesAppContainer = document.getElementById("notes-app-container");
+
+notesAppContainer.onclick = function() {
+    notesApp.style.display = 'block';
+    notesCloseButton.style.display = 'block';
+}
+
+notesCloseButton.onclick = function() {
+    notesApp.style.display = 'none'
+    notesCloseButton.style.display = 'none';
+}
+
+
 let notesProjA = document.getElementById("proj-a-notes");
