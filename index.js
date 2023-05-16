@@ -37,5 +37,23 @@ notesCloseButton.onclick = function() {
     notesCloseButton.style.display = 'none';
 }
 
+notesAppContainer.onmouseover = function() {
+    let notesP = document.getElementById("notes-p");
+    let Notes = document.getElementById("Notes");
+    let notesColContainer = document.getElementById("notes-col-container");
+    notesP.style.display = 'block';
+    Notes.style.display = 'block';
+    notesColContainer.style.display = 'flex';
+}
+
+notesAppContainer.onmouseleave = function() {
+    let notesP = document.getElementById("notes-p");
+    let Notes = document.getElementById("Notes");
+    let notesColContainer = document.getElementById("notes-col-container");
+    notesP.style.display = 'none';
+    Notes.style.display = 'none';
+    notesColContainer.style.display = 'none';
+}
+
 
 let notesProjA = document.getElementById("proj-a-notes");

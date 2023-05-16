@@ -271,7 +271,7 @@ p {
 }
 
 #notes-app-container:hover {
-    width: 20%;
+    width: 40%;
     height: 40%;
 }
 
@@ -330,6 +330,24 @@ p {
     transition: all 200ms;
 }
 
+#notes-section-container {
+    justify-content: center;
+}
+
+#notes-p, #Notes, #notes-col-container  {
+    display: none;
+}
+
+#notes-logos-container {
+    justify-content: flex-end;
+}
+
+.notes-logos {
+    width: 1rem;
+    height: auto;
+    margin: 0 .25rem;
+    filter:grayscale();
+}
 
 
 @media only screen and (max-width: 720px) {
