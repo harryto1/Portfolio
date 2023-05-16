@@ -455,6 +455,26 @@ p {
 
     .proj-images{
         width: auto;
-        height: 1.5rem;
+        height: 2rem;
+    }
+    
+    #intro {
+        height: 45%;
+    }
+
+    #languages {
+        height: 35%;
+    }
+
+    #info {
+        height: 30%;
+    }
+
+    .col-container {
+        height: 40rem;
+    }
+
+    p {
+        margin-top: .5rem;
     }
 }
