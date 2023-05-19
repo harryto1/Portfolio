@@ -76,4 +76,38 @@ function media1200px(changeInMedia) {
     }
 }
 
+let locationIcon = document.getElementById("location-icon");
+let locationSpan = document.getElementById("location-span");
+let locationSection = document.getElementById("location-section");
+
+locationSection.onmouseover = function() {
+    locationIcon.style.opacity= 1;
+    locationSpan.style.opacity = 1;
+}
+
+locationSection.onmouseleave = function() {
+    locationIcon.style.opacity = 0.5;
+    locationSpan.style.opacity= 0.5;
+}
+
+locationIcon.onmouseover = function() {
+    locationIcon.style.opacity = 1;
+    locationSpan.style.opacity = 1;
+}
+
+locationIcon.onmouseleave = function() {
+    locationIcon.style.opacity = 0.5;
+    locationSpan.style.opacity= 0.5;
+}
+
+locationSpan.onmouseover = function() {
+    locationIcon.style.opacity = 1;
+    locationSpan.style.opacity = 1;
+}
+
+locationSpan.onmouseleave = function() {
+    locationIcon.style.opacity = 0.5;
+    locationSpan.style.opacity= 0.5;
+}
+
 changeInMedia.addEventListener(media1200px);
