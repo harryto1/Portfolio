@@ -376,7 +376,7 @@ p {
 
 #introduction-p {
     margin-bottom: 0;
-    margin-top: 1rem;
+    margin-top: .75rem;
 }
 
 #location-section {
@@ -388,6 +388,32 @@ p {
 }
 
 #location-span {
+    font-size: 14px;
+    margin-left: .4rem;
+    color: black;
+    opacity: 0.5;
+    font-family: 'Raleway';
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+#location-section-2 {
+    display: none;
+    margin-top: .7rem;
+    align-items: center;
+    margin-left: .5rem;
+    width: 6.5rem;
+}
+
+#location-icon-2 {
+    display: none; 
+    width: 1rem;
+    height: 1rem;
+    opacity: 0.5;
+}
+
+#location-span-2 {
+    display: none;
     font-size: 14px;
     margin-left: .4rem;
     color: black;
@@ -465,27 +491,63 @@ p {
     .main-container {
         width: 100%;
     }
+
+    #location-icon, #location-section, #location-span {
+        display: none;
+    }
+
+    #location-icon-2 {
+        display: block;
+        width: .85rem;
+        height: .85rem;
+        opacity: 0.5;
+    }
+    
+    #location-span-2 {
+        display: block;
+        font-size: 14px;
+        margin-left: .4rem;
+        color: black;
+        opacity: 0.5;
+        font-family: 'Raleway';
+        transition: all 200ms;
+        cursor: pointer;
+    }
+
+    #location-section-2 {
+        display: flex;
+        margin-top: 0rem;
+        align-items: center;
+        margin-left: 0rem;
+        width: 6.5rem;
+    }
     
     p, #location-span {
         font-size: 10px;
     }
 
-    #profile-picture {
-        width: 4rem;
-        height: auto;
-    }
-
-    h3 {
+    p {
         font-size: 12px;
     }
 
+
+    #profile-picture {
+        width: 5rem;
+        height: auto;
+    }
+
+    #name {
+        font-size: 16px;
+    }
+
     #career {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .proj-images{
         width: auto;
-        height: 2rem;
+        height: 3rem;
+        margin-top: 0;
     }
     
     #intro {
@@ -506,6 +568,23 @@ p {
 
     p {
         margin-top: .5rem;
+
+    }
+
+    #introduction-p {
+        margin-top: .25rem;
+    }
+
+    #send-email {
+        width: 1.5rem;
+        height: auto;
+        margin-left: 11%;
+        margin-top: 1rem;
+    }
+
+    #profile {
+        margin-top: 0rem;
+        align-items: center;
     }
 
 

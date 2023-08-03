@@ -2,6 +2,7 @@ let moreInfo = document.getElementById("more-info");
 let infoSec = document.getElementById("info");
 let projSec = document.getElementById("projects");
 let changeInMedia = window.matchMedia("(max-width: 1200px)");
+let changeInMedia2 = window.matchMedia("(max-width: 480px)"); 
 
 moreInfo.onclick = function() {
     if (moreInfo.innerHTML === '▽') {
@@ -76,6 +77,7 @@ function media1200px(changeInMedia) {
     }
 }
 
+
 let locationIcon = document.getElementById("location-icon");
 let locationSpan = document.getElementById("location-span");
 let locationSection = document.getElementById("location-section");
@@ -110,4 +112,3 @@ locationSpan.onmouseleave = function() {
     locationSpan.style.opacity= 0.5;
 }
 
-changeInMedia.addEventListener(media1200px);
