@@ -437,6 +437,7 @@ p {
 
     #second-main-container {
         flex-direction: column;
+        align-items: center;
         height: 30rem;
         flex-wrap: nowrap;
         margin-top: .15rem;
@@ -469,6 +470,7 @@ p {
 
     #second-main-container {
         flex-direction: column;
+        align-items: center;
         height: 30rem;
         flex-wrap: nowrap;
         margin-top: .15rem;
