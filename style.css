@@ -144,6 +144,10 @@ p {
     margin-top: 1rem;
 }
 
+#proj-p {
+    display: block;
+}
+
 #projects {
     background-color: orange;
     width: 47%;
