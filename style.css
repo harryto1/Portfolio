@@ -573,6 +573,9 @@ p {
         margin-top: 0.5rem;
     }
 
+    #proj-p {
+        display: block;
+    }
 
     #profile-picture {
         width: 5rem;
