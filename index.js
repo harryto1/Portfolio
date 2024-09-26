@@ -81,6 +81,43 @@ function media1200px(changeInMedia) {
 let locationIcon = document.getElementById("location-icon");
 let locationSpan = document.getElementById("location-span");
 let locationSection = document.getElementById("location-section");
+let educationSection = document.getElementById("education-section");
+let educationIcon = document.getElementById("education-icon");
+let educationSpan = document.getElementById("education-span");
+
+educationSection.onmouseover = function() {
+    educationIcon.style.opacity= 1;
+    educationSpan.style.opacity = 1;
+}
+
+educationSection.onmouseleave = function() {
+    educationIcon.style.opacity = 0.5;
+    educationSpan.style.opacity= 0.5;
+}
+
+educationSection.onclick = function() {
+   window.open("https://www.uprm.edu/portada/", "_blank");
+}
+
+educationIcon.onmouseover = function() {
+    educationIcon.style.opacity = 1;
+    educationSpan.style.opacity = 1;
+}
+
+educationIcon.onmouseleave = function() {
+    educationIcon.style.opacity = 0.5;
+    educationSpan.style.opacity= 0.5;
+}
+
+educationSpan.onmouseover = function() {
+    educationIcon.style.opacity = 1;
+    educationSpan.style.opacity = 1;
+}
+
+educationSpan.onmouseleave = function() {
+    educationIcon.style.opacity = 0.5;
+    educationSpan.style.opacity= 0.5;
+}
 
 locationSection.onmouseover = function() {
     locationIcon.style.opacity= 1;
