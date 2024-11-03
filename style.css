@@ -598,11 +598,11 @@ p {
     }
     
     p, #location-span, #education-span {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     p {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;
     }
