@@ -49,7 +49,7 @@ notesCloseButton.onclick = function() {
         hangmanApp.style.display = 'none';
         notesCloseButton.style.display = 'none';
     }
-} // a
+}
 
 notesAppContainer.onmouseover = function() {
     if (!changeInMedia.matches) {
