@@ -243,6 +243,11 @@ p {
     font-family: "Raleway", serif;
 }
 
+#proj-a-hangman::before {
+    content: "Hangman";
+    font-family: "Raleway", serif;
+}
+
 #github {
     background-color: #343a40;
     width: 15%;
@@ -268,8 +273,7 @@ p {
     height: 40%;
 }
 
-#notes-app-container {
-    background-color: lightgoldenrodyellow;
+.projects-section {
     width: 15%;
     height: 35%;
     display: flex;
@@ -279,17 +283,31 @@ p {
     cursor: pointer;
 }
 
-#notes-app-img {
+#notes-app-container {
+    background-color: lightgoldenrodyellow;
+}
+
+#hangman-app-container {
+    background-color: dodgerblue;
+}
+
+#notes-app-img  {
     width: 6rem;
     height: 6rem;
 }
 
-#notes-app-container:hover {
+#hangman-app-img {
+    width: 4.5rem;
+    height: auto;
+
+}
+
+.projects-section:hover {
     width: 40%;
     height: 40%;
 }
 
-#notes-app {
+#notes-app, #hangman-app {
     display: none;
     position: fixed;
     top: 50%;
@@ -298,6 +316,10 @@ p {
     border: 3px goldenrod outset;
     z-index: 2;
     border-radius: 20px;
+}
+
+#hangman-app {
+    border: 3px dodgerblue outset;
 }
 
 #close-button-notes {
@@ -348,20 +370,27 @@ p {
     justify-content: center;
     align-items: center;
 }
-
-#notes-p, #Notes, #notes-col-container  {
-    display: none;
+#hangman-section-container {
+    justify-content: center;
+    align-items: center;
 }
 
-#notes-p {
+#notes-p, #Notes, #notes-col-container, #hangman-p, #Hangman, #hangman-col-container  {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-p {
     margin-left: .5rem;
 }
 
-#notes-logos-container {
+#notes-logos-container, #hangman-logos-container {
     justify-content: flex-end;
 }
 
-.notes-logos {
+.projects-logos {
     width: 1rem;
     height: auto;
     margin: 0 .25rem;
@@ -461,7 +490,7 @@ p {
         flex-wrap: nowrap;
     }
 
-    #intro, #info, #languages, #projects, #twitter, #github, #notes-app-container {
+    #intro, #info, #languages, #projects, #twitter, #github, #notes-app-container, #hangman-app-container {
         width: 100%;
     }
 
@@ -473,7 +502,7 @@ p {
         margin-top: .15rem;
     }
 
-    #twitter:hover, #github:hover, #notes-app-container:hover {
+    #twitter:hover, #github:hover, #notes-app-container:hover, #hangman-app-container:hover {
         width: 100%;
     }
 
@@ -482,6 +511,10 @@ p {
     }
     
     #notes-col-container {
+        display: flex;
+    }
+
+    #hangman-col-container {
         display: flex;
     }
 
@@ -494,7 +527,7 @@ p {
         flex-wrap: nowrap;
     }
 
-    #intro, #info, #languages, #projects, #twitter, #github, #notes-app-container {
+    #intro, #info, #languages, #projects, #twitter, #github, #notes-app-container, #hangman-app-container {
         width: 100%;
     }
 
@@ -510,11 +543,11 @@ p {
         width: 100%;
     }
 
-    #notes-p, #Notes  {
+    #notes-p, #Notes, #hangman-p, #Hangman  {
         display: block;
     }
     
-    #notes-col-container {
+    #notes-col-container, #hangman-col-container {
         display: flex;
     }
 }

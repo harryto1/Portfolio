@@ -1,8 +1,8 @@
-let moreInfo = document.getElementById("more-info");
-let infoSec = document.getElementById("info");
-let projSec = document.getElementById("projects");
-let changeInMedia = window.matchMedia("(max-width: 1200px)");
-let changeInMedia2 = window.matchMedia("(max-width: 480px)"); 
+const moreInfo = document.getElementById("more-info");
+const infoSec = document.getElementById("info");
+const projSec = document.getElementById("projects");
+const changeInMedia = window.matchMedia("(max-width: 1200px)");
+const changeInMedia2 = window.matchMedia("(max-width: 480px)");
 
 moreInfo.onclick = function() {
     if (moreInfo.innerHTML === '▽') {
@@ -25,18 +25,30 @@ moreInfo.onclick = function() {
 
 }
 
-let notesCloseButton = document.getElementById("close-button-notes");
-let notesApp = document.getElementById("notes-app");
-let notesAppContainer = document.getElementById("notes-app-container");
+const notesCloseButton = document.getElementById("close-button-notes");
+const notesApp = document.getElementById("notes-app");
+const notesAppContainer = document.getElementById("notes-app-container");
+const hangmanAppContainer = document.getElementById("hangman-app-container");
+const hangmanApp = document.getElementById("hangman-app");
 
 notesAppContainer.onclick = function() {
     notesApp.style.display = 'block';
     notesCloseButton.style.display = 'block';
 }
 
+hangmanAppContainer.onclick = function() {
+    hangmanApp.style.display = 'block';
+    notesCloseButton.style.display = 'block';
+}
+
 notesCloseButton.onclick = function() {
-    notesApp.style.display = 'none'
-    notesCloseButton.style.display = 'none';
+    if (notesApp.style.display === 'block') {
+        notesApp.style.display = 'none'
+        notesCloseButton.style.display = 'none';
+    } else if (hangmanApp.style.display === 'block') {
+        hangmanApp.style.display = 'none';
+        notesCloseButton.style.display = 'none';
+    }
 }
 
 notesAppContainer.onmouseover = function() {
@@ -61,8 +73,34 @@ notesAppContainer.onmouseleave = function() {
     }
 }
 
+hangmanAppContainer.onmouseover = function() {
+    if (!changeInMedia.matches) {
+    let hangmanP = document.getElementById("hangman-p");
+    let Hangman = document.getElementById("Hangman");
+    let hangmanColContainer = document.getElementById("hangman-col-container");
+    let hangmanImage = document.getElementById("hangman-app-img");
+    hangmanP.style.display = 'block';
+    Hangman.style.display = 'block';
+    hangmanColContainer.style.display = 'flex';
+    hangmanImage.style.width = '5rem';
+    }
+}
 
-let notesProjA = document.getElementById("proj-a-notes");
+hangmanAppContainer.onmouseleave = function() {
+    if (!changeInMedia.matches) {
+    let hangmanP = document.getElementById("hangman-p");
+    let Hangman = document.getElementById("Hangman");
+    let hangmanColContainer = document.getElementById("hangman-col-container");
+    let hangmanImage = document.getElementById("hangman-app-img");
+    hangmanP.style.display = 'none';
+    Hangman.style.display = 'none';
+    hangmanColContainer.style.display = 'none';
+    hangmanImage.style.width = '4.5rem';
+    }
+}
+
+
+const notesProjA = document.getElementById("proj-a-notes");
 
 function media1200px(changeInMedia) {
     if (changeInMedia.matches) {
@@ -72,18 +110,25 @@ function media1200px(changeInMedia) {
         notesP.style.display = 'block';
         Notes.style.display = 'block';
         notesColContainer.style.display = 'flex';
-        notesAppContainer.style.width= '40%';
+        notesAppContainer.style.width= '100%';
         notesAppContainer.style.height= '40%';
+        let hangmanP = document.getElementById("hangman-p");
+        let Hangman = document.getElementById("Hangman");
+        let hangmanColContainer = document.getElementById("hangman-col-container");
+        hangmanP.style.display = 'block';
+        Hangman.style.display = 'block';
+        hangmanColContainer.style.display = 'flex';
+        hangmanAppContainer.style.width= '100%';
+        hangmanAppContainer.style.height= '40%';
     }
 }
 
-
-let locationIcon = document.getElementById("location-icon");
-let locationSpan = document.getElementById("location-span");
-let locationSection = document.getElementById("location-section");
-let educationSection = document.getElementById("education-section");
-let educationIcon = document.getElementById("education-icon");
-let educationSpan = document.getElementById("education-span");
+const locationIcon = document.getElementById("location-icon");
+const locationSpan = document.getElementById("location-span");
+const locationSection = document.getElementById("location-section");
+const educationSection = document.getElementById("education-section");
+const educationIcon = document.getElementById("education-icon");
+const educationSpan = document.getElementById("education-span");
 
 educationSection.onmouseover = function() {
     educationIcon.style.opacity= 1;
@@ -148,4 +193,5 @@ locationSpan.onmouseleave = function() {
     locationIcon.style.opacity = 0.5;
     locationSpan.style.opacity= 0.5;
 }
+
 
