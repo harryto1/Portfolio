@@ -32,13 +32,21 @@ const hangmanAppContainer = document.getElementById("hangman-app-container");
 const hangmanApp = document.getElementById("hangman-app");
 
 notesAppContainer.onclick = function() {
-    notesApp.style.display = 'block';
-    notesCloseButton.style.display = 'block';
+    if (changeInMedia2.matches) {
+        window.open("harryto1.github.io/Notes", "_blank");
+    } else {
+        notesApp.style.display = 'block';
+        notesCloseButton.style.display = 'block';
+    }
 }
 
 hangmanAppContainer.onclick = function() {
-    hangmanApp.style.display = 'block';
-    notesCloseButton.style.display = 'block';
+    if (changeInMedia2.matches) {
+        window.open("harryto1.pythonanywhere.com", "_blank");
+    } else {
+        hangmanApp.style.display = 'block';
+        notesCloseButton.style.display = 'block';
+    }
 }
 
 notesCloseButton.onclick = function() {
