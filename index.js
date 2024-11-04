@@ -3,6 +3,7 @@ const infoSec = document.getElementById("info");
 const projSec = document.getElementById("projects");
 const changeInMedia = window.matchMedia("(max-width: 1200px)");
 const changeInMedia2 = window.matchMedia("(max-width: 480px)");
+// : )
 
 moreInfo.onclick = function() {
     if (moreInfo.innerHTML === '▽') {
