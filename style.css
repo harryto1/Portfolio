@@ -415,14 +415,16 @@ p {
     align-items: center;
     margin-left: .5rem;
     width: 6.5rem;
+    cursor: pointer;
 }
 
 #education-section {
     display: flex;
     margin-top: .7rem;
     align-items: center;
-    margin-left: .5rem;
-    width: 6.5rem;
+    width: auto;
+    padding: 0 0.5rem;
+    cursor: pointer;
 }
 
 #location-education-container {
