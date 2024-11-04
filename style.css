@@ -395,7 +395,7 @@ p {
     width: 1rem;
     height: auto;
     margin: 0 .25rem;
-    filter:grayscale();
+    filter:grayscale(100%);
 }
 
 #location-icon {
