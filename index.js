@@ -33,7 +33,7 @@ const hangmanApp = document.getElementById("hangman-app");
 
 notesAppContainer.onclick = function() {
     if (changeInMedia2.matches) {
-        window.open("harryto1.github.io/Notes", "_blank");
+        window.open("https://harryto1.github.io/Notes", "_blank");
     } else {
         notesApp.style.display = 'block';
         notesCloseButton.style.display = 'block';
@@ -42,7 +42,7 @@ notesAppContainer.onclick = function() {
 
 hangmanAppContainer.onclick = function() {
     if (changeInMedia2.matches) {
-        window.open("harryto1.pythonanywhere.com", "_blank");
+        window.open("https://harryto1.pythonanywhere.com", "_blank");
     } else {
         hangmanApp.style.display = 'block';
         notesCloseButton.style.display = 'block';
